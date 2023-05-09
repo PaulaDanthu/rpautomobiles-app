@@ -6,6 +6,7 @@ import Offre from '../components/Offre.vue'
 import Vendus from '../components/Vendus.vue'
 import Contact from '../components/Contact.vue'
 
+
 const routes = [
     {path: '/', name: 'Home', component: Home},
     {path: '/mazdamx5', name: 'MazdaMX5', component: MazdaMX5},
