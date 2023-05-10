@@ -1,16 +1,16 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
     "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
-    ],
+    "./src/**/*.{vue,js,ts,jsx,tsx}"
+  ],
   theme: {
-    fontFamily: {
-      'mono': ['ui-monospace', 'Times'],
-      'display': ['Times'],
-      'body': ['Times'],
-    }
   },
-  extend: {},
+  extend: {
+    fontFamily: {
+      'body': ['Rajdhani']
+      }
+    },
   plugins: [],
 }
+

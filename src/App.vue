@@ -1,22 +1,30 @@
 
 <template>
-  <div id="app" class="font-sans">
+  <div id="app" class="font-normal tracking-wider">
     <nav 
-      class="
-        bg-cyan-950
-        text-sky-50
-        pt-2
-        pb-2
-        flex
-        justify-center
-        ">
-        <router-link to="/" class="pr-8">ACCUEIL</router-link>
-        <router-link to="/mazdamx5" class="pr-8">MAZDA MX5</router-link>
-        <router-link to="/about" class="pr-8">NOUS</router-link>
-        <router-link to="/offre" class="pr-8">OFFRE</router-link>
-        <router-link to="/vendus" class="pr-8">VENDUS</router-link>
-        <router-link to="/contact">CONTACT</router-link>
-    </nav>
+    class="
+    bg-cyan-950
+    text-sky-50
+    pt-6
+    pb-6
+    pr-6
+    flex
+    justify-between
+    sticky
+    ">
+        <router-link to="/" 
+        class="
+          pl-16
+          text-xl
+          ">MX5 CENTER | RP AUTOMOBILES</router-link>    
+        <div>
+          <router-link to="/mazdamx5" class="pr-8">Mazda MX5</router-link>
+          <router-link to="/about" class="pr-8">Nous</router-link>
+          <router-link to="/offre" class="pr-8">Offre</router-link>
+          <router-link to="/vendus" class="pr-8">Vendus</router-link>
+          <router-link to="/contact">Contact</router-link>
+        </div>
+      </nav>
     <router-view></router-view>
   </div>
 </template>
