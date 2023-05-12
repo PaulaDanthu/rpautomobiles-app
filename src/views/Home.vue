@@ -5,11 +5,10 @@
         flex-col-reverse
         items-center
     ">
-        <div 
-            class="
-            static
+        <div>
+            <img src="../assets/mx5mazdamain.jpeg" alt="Mazda MX5 home page" class="
+            w-screen
         ">
-            <img src="../assets/mx5mazdamain.jpeg" alt="Mazda MX5 home page">
         </div>
         <div 
             class="
