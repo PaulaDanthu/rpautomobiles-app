@@ -1,57 +1,52 @@
 <template>
 <div id="vendus">
-    <section>
-        <h1>{{ header }}</h1>
-    </section>
-    <section 
-        class="
-        flex
-        flex-row
-        justify-center
-        mt-12
-    ">
-        <div v-for="model in models" 
-            class="
-            w-72
-            h-52
-            border
-            border-solid
-            border-black
-        ">
-            <img :src="model.url" :alt="model.alt" :key="model.id"
-                class="
-                w-full
-                h-full
-            " />
-
-        </div>
-    </section>
-</div>    
+    <carousel class="carousel" v-slot="{ currentSlide }">
+        <slide v-for="(slide, index) in carouselSlides" :key="index">
+            <div v-show="currentSlide === index+1" class="slide-info">
+                <img :src="`src/assets/NA/${slide}.png`" alt="na">
+            </div>
+        </slide>
+    </carousel> 
+</div>         
 </template>
 
 <script>
+import Carousel from './Carousel.vue'
+import Slide from './Slide.vue'
 
 export default {
-    data () {
-        return{
-            models: [
-                {id: 1, url: 'src/assets/NA.jpg', alt: 'NA'},
-                {id: 2, url: 'src/assets/NB.jpg', alt: 'NB'},
-                {id: 3, url: 'src/assets/NC.jpg', alt: 'NC'},
-                {id: 4, url: 'src/assets/ND.jpg', alt: 'ND'}
-            ],
-            images: [
+    setup() {
+        const carouselSlides = ['na-1', 'na-2', 'na-3']
 
-            ],
-            header: 'Nous avons trouvé pour nos clients'
-        }
-        
+        return{carouselSlides}
+    },
+
+    components: {
+        'carousel' : Carousel,
+        'slide' : Slide
     }
-
 }
-
 </script>
 
-<style>
+<style scoped>
+.carousel{
+    position: relative;
+    max-height: 100vh;
+    height: 100vh; 
+}
+.slide-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 100%;
+    height: 100%;
+}
+
+.img {
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 </style>
