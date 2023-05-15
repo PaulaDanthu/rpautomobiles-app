@@ -1,23 +1,38 @@
 <template>
 <section 
         class="
-        flex
-        flex-col
-        items-center
         mt-12
+        ml-0
     ">
-        <div>
-                <!-- todo: a carousel --> 
-            <img v-for="na in nas" :src="na.url" :alt="na.alt" :key="na.id"
-                :class="[ na.active ? 'visible' : 'invisible' ]"
-                class="
-                max-w-xl
-                absolute
-                -bottom-12
-                
-            "/> 
-            <button @click.prevent="nextImageNa(na)" class="z-50 absolute">Next</button>
+    <h1 
+        class="
+        font-bold
+        text-3xl
+        mb-8
+        text-center
+    ">Mazda MX5 trouvé pour nos clients</h1>
+    <div>
+        <div 
+            class="
+            
+        ">
+            <img :src="models[0].url" :alt="models[0].alt" :key="models[0].id" /> 
         </div>
+        <h1 
+            class="
+            mt-8
+            text-center
+            font-bold
+            text-2xl    
+        ">Mazda MX5 NA</h1>
+        <p 
+            class="
+            text-center
+            text-xl
+            mt-4
+            mb-8    
+        ">1re génération - NA (1989-1998)</p>
+    </div>
 </section>
 </template>
 
@@ -30,29 +45,11 @@ setup() {
         {id: 3, url: 'src/assets/NC.jpg', alt: 'NC'},
         {id: 4, url: 'src/assets/ND.jpg', alt: 'ND'}
     ]
-
-    const nas = [
-        {id: 1, url: 'src/assets/NA/Mazda_MX5_8.png', alt: 'NA', active: false},
-        {id: 2, url: 'src/assets/NA/Mazda_MX5_28.png', alt: 'NB', active: false},
-        {id: 3, url: 'src/assets/NA/Mazda_MX5_40.png', alt: 'NC', active: true},
-    ]
-
-    function nextImageNa(na) {
-        na.active = !na.active
-    }
-
-    return { models, nas, nextImageNa }
+    return { models }
     }
 }
 </script>
 
 <style>
-.visible {
-    display: block;
-}
-
-.invisible {
-    display: none;
-}
 
 </style>
