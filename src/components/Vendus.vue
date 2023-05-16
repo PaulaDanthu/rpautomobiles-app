@@ -11,17 +11,16 @@
         <nas />
         <carousel 
             :pagination="true"
-            :navigation="false"
+            :navigation="true"
+            :startAutoPlay="true"
+            :timeout="4000"
             v-slot="{ currentSlide }" 
             class="
             relative
             w-3/6
         ">
             <slide v-for="(slide, index) in carouselSlides" :key="index">
-                <div v-show="currentSlide === index+1" 
-                    class="
-                    
-                ">
+                <div v-show="currentSlide === index+1">
                     <img :src="`src/assets/NA/${slide}.png`" alt="na">
                 </div>
             </slide>

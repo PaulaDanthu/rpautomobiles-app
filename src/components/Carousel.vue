@@ -37,8 +37,10 @@ export default {
     setup(props) {
         const currentSlide = ref(1)
         const getSlideCount = ref(null)
-        const autoPlayEnabled = ref(true)
-        const timeoutDuration = ref(3000)
+        const autoPlayEnabled = ref(
+            props.startAutoPlay === undefined ? true : props.startAutoPlay)
+        const timeoutDuration = ref(
+            props.timeout === undefined ? 5000 : props.timeout)
         const paginationEnabled = ref(
             props.pagination === undefined ? true : props.pagination)
         const navigationEnabled = ref(
@@ -139,8 +141,8 @@ i {
 
 span {
     cursor: pointer;
-    width: 20px;
-    height: 20px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     background-color: white;
 }
