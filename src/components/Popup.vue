@@ -9,6 +9,8 @@
         text-center
         p-8
         text-white
+        border
+        border-solid
     ">
     <h1 
         class="
@@ -57,4 +59,8 @@ export default {
 </script>
 
 <style>
+#popup {
+    color: #EEF0EB;
+    border-color: #EEF0EB;
+}
 </style>

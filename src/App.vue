@@ -3,8 +3,6 @@
   <div id="app" class="font-normal tracking-wider">
     <nav 
     class="
-    bg-cyan-950
-    text-sky-50
     pt-6
     pb-6
     pr-6
@@ -35,4 +33,8 @@
 
 <style>
 
+nav {
+  background-color: #153243;
+  color: #EEF0EB;
+}
 </style>

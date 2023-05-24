@@ -1,21 +1,35 @@
 <template>
 <div id="vendus">
-    <div  
+    <div>
+        <h1 
         class="
+        font-bold
+        text-3xl
+        mb-8
+        mt-8
+        text-center
+    ">Mazda MX5 trouvé pour nos clients</h1>
+        <section class="
         flex
         items-center
-        flex-col 
-        border
-        border-black
-        border-solid
-    ">
-    <nas />
+        flex-row 
+        ">
+            <nas class="
+                basis-1/4
+                m-4
+            "/>
+            <nbs class="
+                basis-1/4
+                m-4
+            "/>
+        </section>
     </div>
 </div>         
 </template>
 
 <script>
 import Nas from './Nas.vue'
+import Nbs from './Nbs.vue'
 
 export default {
     setup() {
@@ -23,7 +37,8 @@ export default {
     },
 
     components: {
-        'nas' : Nas
+        'nas' : Nas,
+        'nbs' : Nbs
     }
 }
 </script>
