@@ -1,6 +1,7 @@
 <template>
 <div id="vendus">
-    <div class="
+    <div  
+        class="
         flex
         items-center
         flex-col 
@@ -8,42 +9,20 @@
         border-black
         border-solid
     ">
-        <nas />
-        <carousel 
-            :pagination="true"
-            :navigation="true"
-            :startAutoPlay="true"
-            :timeout="4000"
-            v-slot="{ currentSlide }" 
-            class="
-            relative
-            w-3/6
-        ">
-            <slide v-for="(slide, index) in carouselSlides" :key="index">
-                <div v-show="currentSlide === index+1">
-                    <img :src="`src/assets/NA/${slide}.png`" alt="na">
-                </div>
-            </slide>
-        </carousel> 
+    <nas />
     </div>
 </div>         
 </template>
 
 <script>
-import Carousel from './Carousel.vue'
-import Slide from './Slide.vue'
 import Nas from './Nas.vue'
 
 export default {
-    setup() {1
-        const carouselSlides = ['na-1', 'na-2', 'na-3']
-
-        return{ carouselSlides }
+    setup() {
+        return{}
     },
 
     components: {
-        'carousel' : Carousel,
-        'slide' : Slide,
         'nas' : Nas
     }
 }
