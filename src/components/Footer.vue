@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>
-            Footer
+            Design & creation: Paula Danthu ®2023
         </h1>
     </div>
 </template>
@@ -10,6 +10,10 @@
 
 </script>
 
-<style>
-
+<style scoped>
+* {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
 </style>
