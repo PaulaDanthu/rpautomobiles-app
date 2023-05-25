@@ -4,9 +4,21 @@
             Mazda MX5
         </h1>
     </div>
+    <my-footer />
 </template>
 
-<script setup>
+<script>
+import Footer from './Footer.vue';
+
+export default {
+    setup() {
+
+    },
+
+    components: {
+        'my-footer': Footer
+    }
+}
 
 </script>
 
