@@ -15,4 +15,4 @@ Hello! Thanks for your interest in my code :) You will find here a simple SPA ma
 
 Please feel free to write me your thoughts and advices. 
 
-# Please also note I'm free to take the new job opportinities as a frontent dev with a preference of writing in Vue.
+# Please also note I'm free to take the new job opportinities as a frontend dev with a preference of writing in Vue.
