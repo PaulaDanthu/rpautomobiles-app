@@ -1,14 +1,7 @@
 <template>
 <div id="vendus">
     <div>
-        <h1 
-        class="
-        font-bold
-        text-3xl
-        mb-8
-        mt-8
-        text-center
-    ">Mazda MX5 trouvé pour nos clients</h1>
+        <h1>Mazda MX5 trouvé pour nos clients</h1>
         <section class="
         flex
         items-center

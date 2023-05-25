@@ -12,13 +12,7 @@
         border
         border-solid
     ">
-    <h1 
-        class="
-        font-bold
-        text-lg
-        mb-8
-        mt-4
-    ">Ce site web utilise des cookies.</h1>
+    <h1>Ce site web utilise des cookies.</h1>
     <p 
         class="
         mb-12

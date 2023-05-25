@@ -1,8 +1,8 @@
 <template>
     <div>
-        <h1>
+        <p>
             Design & creation: Paula Danthu ®2023
-        </h1>
+        </p>
     </div>
 </template>
 

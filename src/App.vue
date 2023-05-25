@@ -37,4 +37,20 @@ nav {
   background-color: #153243;
   color: #EEF0EB;
 }
+
+h1 {
+  font-weight: bold;
+  font-size: xx-large;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: x-large;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+}
 </style>

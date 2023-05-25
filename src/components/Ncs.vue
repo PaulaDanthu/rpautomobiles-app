@@ -1,13 +1,7 @@
 <template class="flex flex-row">
     <section class="mt-8">
         <div class="card">
-            <h1 
-                class="
-                mt-8
-                text-center
-                font-bold
-                text-2xl    
-            ">Mazda MX5 NC</h1>
+            <h2>Mazda MX5 NC</h2>
             <p 
                 class="
                 text-center

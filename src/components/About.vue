@@ -3,6 +3,7 @@
         <h1>
             Qui sommes nous?
         </h1>
+
     </div>
         <my-footer />
 </template>
@@ -12,7 +13,6 @@ import Footer from './Footer.vue';
 
 export default {
     setup() {
-
     },
 
     components: {
