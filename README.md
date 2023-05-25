@@ -1,7 +1,18 @@
-# Vue 3 + Vite
+# RP Automobiles application with Vue 3 + Vite
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Hello! Thanks for your interest in my code :) You will find here a simple SPA made with Vue 3 + Vite. It's a presentation web page of a small automobile bussiness. The concept is to keep it simple and easy to read. 
 
-## Recommended IDE Setup
+## Functionalities
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- reactive objects
+- lifecycle hooks
+- dependency injections
+- v-directives
+- components, special elements and atributes
+
+### Styling
+- Tailwind + classic CSS
+
+Please feel free to write me your thoughts and advices. 
+
+#### Please also note I'm free to take the new job opportinities as a frontent dev with a preference of writing in Vue.
