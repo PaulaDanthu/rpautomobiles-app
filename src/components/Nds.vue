@@ -1,7 +1,7 @@
 <template class="flex flex-row">
     <section class="mt-8">
         <div class="card">
-            <h2>Mazda MX5 NC</h2>
+            <h2>Mazda MX5 ND</h2>
             <p 
                 class="
                 text-center
