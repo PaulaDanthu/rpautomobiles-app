@@ -1,28 +1,26 @@
 <template>
-    <div>
-        <h1>
-            Contact
-        </h1>
-        <form class="contact-form" id="fs-frm" name="contact-form" accept-charset="utf-8" action="https://formspree.io/f/mjvdrzrk" method="post">
-            <fieldset id="fs-frm-inputs">
-                <label for="full-name">Votre nom</label>
-                <input type="text" name="name" id="full-name" placeholder="Prenom Nom" required="">
-                <label for="email-address">Votre e-mail</label>
-                <input type="email" name="_replyto" id="email-address" placeholder="email@example.fr" required="">
-                <label for="telephone">Numéro de téléphone (Optionnel)</label>
-                <input type="telephone" name="telephone" id="telephone" placeholder="06 12 34 56 78">
-                <label for="message">Message</label>
-                <textarea rows="6" name="message" id="message" placeholder="Votre message" required=""></textarea>
-                <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission">
-            </fieldset>
-            <input type="submit" value="Envoyer">
-        </form>
-    </div>
+    <h1>Contact</h1>
+    <form class="contact-form" id="fs-frm" name="contact-form" accept-charset="utf-8" action="https://formspree.io/f/mjvdrzrk" method="post">
+        <fieldset id="fs-frm-inputs">
+            <label for="full-name">Votre nom</label>
+            <input type="text" name="name" id="full-name" placeholder="Prenom Nom" required="">
+            <label for="email-address">Votre e-mail</label>
+            <input type="email" name="_replyto" id="email-address" placeholder="email@example.fr" required="">
+            <label for="telephone">Numéro de téléphone (Optionnel)</label>
+            <input type="telephone" name="telephone" id="telephone" placeholder="06 12 34 56 78">
+            <label for="message">Message</label>
+            <textarea rows="6" name="message" id="message" placeholder="Votre message" required=""></textarea>
+            <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission">
+        </fieldset>
+        <input type="submit" value="Envoyer">
+    </form>
+    <google-map />
     <my-footer />
 </template>
 
 <script>
-import Footer from './Footer.vue';
+import Footer from './Footer.vue'
+import GoogleMap from './GoogleMap.vue'
 
 export default {
     setup() {
@@ -30,6 +28,7 @@ export default {
     },
 
     components: {
+        'google-map': GoogleMap,
         'my-footer': Footer
     }
 }
@@ -38,8 +37,8 @@ export default {
 
 <style>
 .contact-form {
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
 }
 #fs-frm input,
 #fs-frm select,
@@ -57,8 +56,6 @@ export default {
     width: 100%;
     padding: 0;
     margin: 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
 }
 #fs-frm label,
 #fs-frm legend,

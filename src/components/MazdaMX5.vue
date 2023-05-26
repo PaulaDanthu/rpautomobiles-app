@@ -61,7 +61,7 @@ img {
 }
 .model-article {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     padding: 2rem;
     margin: 1rem;
 }
