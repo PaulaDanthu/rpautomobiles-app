@@ -12,7 +12,8 @@
     "@fawmi/vue-google-maps": "^0.9.79",
     "build-css": "^0.0.1",
     "vue": "^3.2.47",
-    "vue-router": "^4.1.6"
+    "vue-router": "^4.1.6",
+    "vue3-google-map": "^0.15.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
