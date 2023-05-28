@@ -9,13 +9,15 @@ import { defineComponent } from "vue";
 import { GoogleMap, Marker } from "vue3-google-map";
 
 export default defineComponent({
-    components: { GoogleMap, Marker },
     setup() {
         const center = { lat: 45.0935173034668, lng: 5.797624111175537 };
-
+        
         return { center };
     },
-});
+
+    components: { GoogleMap, Marker }
+
+})
 </script>
 <style>
 .map {
@@ -24,5 +26,6 @@ export default defineComponent({
     padding-left: 5rem;
     padding-right: 5rem;
     margin-top: 4rem;
+    
 }
 </style>
