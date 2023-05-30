@@ -23,9 +23,8 @@ export default defineComponent({
 .map {
     width: 100%; 
     height: 500px;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding: 1rem 5rem 1rem 5rem;
     margin-top: 4rem;
-    
+    background-color: #153243;
 }
 </style>

@@ -60,7 +60,7 @@ export default {
 #fs-frm label,
 #fs-frm legend,
 #fs-frm ::placeholder {
-    font-size: .825rem;
+    font-size: 1rem;
     margin-bottom: .5rem;
     padding-top: .2rem;
     display: flex;
@@ -72,7 +72,7 @@ export default {
 #fs-frm select,
 #fs-frm textarea,
 #fs-frm #card-element {
-    border: 1px solid rgba(0,0,0,0.2);
+    border: 1px solid #153243;
     background-color: rgba(255,255,255,0.9);
     padding: .75em 1rem;
     margin-bottom: 1.5rem;
