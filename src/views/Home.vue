@@ -5,7 +5,11 @@
         flex-col-reverse
         items-center
     ">
-        <popup />
+        <popup 
+            v-if="isPopupOpen"
+            v-on:close="closePopup()"
+            v-on:close-not-show="closePopup(true)"
+        />
         <div>
             <img src="../assets/mx5mazdamain.jpeg" alt="Mazda MX5 home page" class="
             w-screen
@@ -188,15 +192,39 @@
 </template>
 
 <script>
+import { onMounted, ref } from 'vue' 
+
 import Footer from '../components/Footer.vue'
 import Popup from '../components/Popup.vue'
 
+
 export default {
+    setup() {
+        const isPopupOpen = ref(false)
+        
+
+
+        onMounted(() => {
+            if (!localStorage.getItem('popup-closed')) {
+                setTimeout(() => {
+                    isPopupOpen.value = true, 
+                    3000})
+            }
+        });
+            function closePopup(notShow) {
+                isPopupOpen.value = false
+                if (notShow) {
+                    localStorage.setItem('popup-closed', notShow)
+                }
+            }
+        return { isPopupOpen, closePopup }
+    },
+    
     components: {
         'my-footer' : Footer,
         'popup': Popup
     }
-    }
+}
 
 </script>
 
