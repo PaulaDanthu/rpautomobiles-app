@@ -3,7 +3,7 @@
         Mazda MX5
     </h1>
     <div v-for="model in models" :key="model.id" class="model-article">
-        <img :src="`/assets/${model.name}.jpg`" :alt="model.alt">
+        <img :src="`src/assets/${model.name}.jpg`" :alt="model.alt">
         <article>
             <h2>{{ model.text }}</h2>
             <p>{{ model.desc }}</p>

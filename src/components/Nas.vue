@@ -15,7 +15,7 @@
             ">
                 <div v-for="(slide, index) in carouselSlidesNa" :key="carouselSlidesNa.id">
                     <div v-show="currentSlide === index+1">
-                        <img :src="`/assets/NA/${slide.name}.png`" alt="na" class="img-carousel">
+                        <img :src="`src/assets/NA/${slide.name}.png`" alt="na" class="img-carousel">
                     </div>
                 </div>
                         <!-- Navigation -->
