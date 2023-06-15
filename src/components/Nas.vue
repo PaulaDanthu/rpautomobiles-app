@@ -15,7 +15,7 @@
             ">
                 <div v-for="(slide, index) in carouselSlidesNa" :key="carouselSlidesNa.id">
                     <div v-show="currentSlide === index+1">
-                        <img :src="`src/assets/NA/${slide.name}.png`" alt="na" class="img-carousel">
+                        <img :src="slide.name" alt="na" class="img-carousel">
                     </div>
                 </div>
                         <!-- Navigation -->
@@ -49,9 +49,9 @@ export default{
     setup() {
         
         const carouselSlidesNa = [
-            {id: 1, name: 'na-1'}, 
-            {id: 2, name: 'na-2'}, 
-            {id: 3, name: 'na-3'} 
+            {id: 1, name: 'src/assets/NA/na-1.png'}, 
+            {id: 2, name: 'src/assets/NA/na-2.png'}, 
+            {id: 3, name: 'src/assets/NA/na-3.png'} 
         ]
 
         const currentSlide = ref(1)
