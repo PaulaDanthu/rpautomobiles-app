@@ -1,14 +1,5 @@
 <template>
-    <div>
-        <h1>
-            Qui sommes nous?
-        </h1>
-        <div class="round-photos">
-            <img src="../assets/robin.jpg" alt="robin">
-            <img src="../assets/paula.jpg" alt="paula">
-        </div>
-        <p v-for="desc in descriptions"> {{ desc.text }}</p>
-    </div>
+    
         <my-footer />
 </template>
 

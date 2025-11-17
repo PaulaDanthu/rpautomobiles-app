@@ -7,7 +7,7 @@
             </div>
         </div>
         <p class="signature">
-            Design & creation: Paula Danthu ®2023
+            Design & creation: Paula ®2023
         </p>
     </div>
 </template>
@@ -19,12 +19,12 @@ export default {
         const contacts = [
             {
                 id: 1,
-                text: '79, chemin de Montjean 38410 Vaulnaveys-Le-Bas',
+                text: '',
                 iconClass: 'fa-solid fa-map-location-dot',
             },
             {
                 id: 2,
-                text: 'Nous sommes joignables facilement : 06 95 67 83 20',
+                text: 'Nous sommes joignables facilement',
                 iconClass: 'fa-solid fa-phone-flip'
             },
             {
